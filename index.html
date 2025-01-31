@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+      .font-poppins{
+            font-family: "Poppins", serif;
+  
+      }
+      .font-sora {
+            font-family: "Sora", serif;
+  
+      }
+    </style>
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./Assignment_03_Category_0002-assets/fav.png" type="image/x-icon">
@@ -18,6 +37,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'btn-bg-color': '#179800',
               }
             }
           }
@@ -26,7 +46,92 @@
 
     <title>Nature's Platter</title>
 </head>
-<body>
+<body class="font-sora">
+  <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+    <nav class="border-b-2 border-[#179800ce] md:border-none">
+      <div class=" w-11/12 sm:w-5/6 md:w-11/12 lg:w-5/6  mx-auto pt-8 pb-8 ">
+        
+        <div class=" flex justify-between items-center">
+
+          <!-- nav image -->
+           <div class="">
+            <img src="./Assignment_03_Category_0002-assets/logo-header.png" alt="" class="hidden md:block">
+            <img src="./Assignment_03_Category_0002-assets/fav.png" alt="" class="block md:hidden">
+           </div>
+
+           <!-- list items -->
+          <div class="hidden md:block">
+            <ul class="  flex    lg:pl-4 gap-10">
+              <li class=" "><a class=" text-base ">Product</a></li>
+              <li class=" "><a class=" text-base ">Services </a></li>
+              <li ><a class=" text-base ">Contact Us </a></li>
+            </ul>
   
+          </div>
+          <!-- button section -->
+           <div class="hidden lg:block">
+            <div class=" flex items-center gap-6 ">
+
+              <!-- search and cart -->
+               <div class=" flex gap-4">
+                <a href="#"><img src="./Assignment_03_Category_0002-assets/Vector.png" alt=""></a>
+                <a href="#"><img src="./Assignment_03_Category_0002-assets/Group.png" alt=""></a>
+               </div>
+  
+               <!-- button -->
+                <div class="  ">
+                  <button class="btn hover:bg-slate-50 bg-slate-50 btn-accent text-base font-normal border-[#179800] px-8 mr-1">Login</button>
+                  <button class="btn btn-success text-base font-normal bg-btn-bg-color text-slate-50 px-8 ">Register</button>
+                </div>
+             </div>
+           </div>
+
+           <!-- ham menu -->
+            <div class=" lg:hidden">
+              
+
+              <div class="dropdown dropdown-left">
+                <div tabindex="0" role="button" class="btn m-1"><i class="fa-solid fa-bars text-2xl"></i></div>
+                <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-none w-52 z-[1]  p-2 ">
+                  <li class="block md:hidden"><a>Product</a></li>
+                  <li  class="block md:hidden"><a>Services</a></li>
+                  <li  class="block md:hidden"><a>Contact us</a></li>
+                  <li ><a>Login</a></li>
+                  <li><a>Register</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <!-- banner section -->
+    <section class="w-11/12 sm:w-5/6 md:w-11/12 lg:w-5/6  mx-auto mt-10 ">
+
+      <!-- banner container -->
+      <div class=" flex flex-col justify-center items-center ">
+        <!-- banner text -->
+       <div class=" text-center space-y-10">
+        <h1 class="text-3xl md:text-6xl font-semibold">Freshness <span class="text-btn-bg-color ">You Can</span> <br> <span class="text-btn-bg-color ">Count</span> On, Prices You'll Love!</h1>
+        <p class="text-base text-slate-500 ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we've got you covered every day!</p>
+       </div>
+
+       <!-- banner image -->
+        <div class=" mt-8">
+          <img src="./Assignment_03_Category_0002-assets/hero-vegetables.png" alt="" >
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+  </main>
+  
+  <footer>
+
+  </footer>
 </body>
 </html>
